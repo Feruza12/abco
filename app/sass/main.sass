@@ -1,0 +1,255 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+b, strong
+	font-weight: bold
+
+.navbar 
+	margin-top: 20px
+
+.img_logo
+	width: 30px
+	height: 39px
+
+.container
+	.navbar
+		.num
+			margin-top: 20px
+			margin-left: 15px
+			font-size: 1em	
+			color: #868686		
+		.navbar-nav
+			font-size: 0.9em
+			a
+				color: black
+				margin-left: 5px
+				&:hover
+					color: $gold
+			.active
+				color: $gold
+			&::after
+				content: ""
+				position: absolute
+				background-color: $gold
+				width: 23px
+				height: 2px
+				bottom: 20px
+				margin-left: 15px				
+			.button_link
+				color: white
+				&:hover
+					color: white	
+				
+	.button_link
+				background-color: $gold
+				color: white
+				padding: 5px 15px
+				border-radius: 15px
+				&:hover
+					color: white	
+					background-color: darken($gold, 3%)
+					text-decoration: none
+	.leading
+		min-height: 388px
+		margin-top: 15px
+		.laptop_bg
+			background-image: url(../img/1.jpg)
+			background-position: center
+			background-repeat: no-repeat
+			-webkit-background-size: contain
+			background-size: contain
+			min-height: 395px
+		.text
+			margin-top: 100px
+			color: 	#393939
+			line-height: 1.2em
+			h1
+				font-size: 1.8em
+				font-family: $second-font
+			p
+				margin-top: 20px
+				font-size: 0.95em
+				margin-right: 0
+				line-height: 1.1
+				color: #393939
+				text-indent: 40px
+			.join_tg
+				font-size: 0.85em
+				line-height: 1
+				color: #393939
+				margin-left: 15px
+				&:hover
+					text-decoration: none
+					color
+	.content
+		color: 	#393939
+		line-height: 1.2em
+		font-size: 0.95em
+
+
+	.about_us
+		.laptop_bg_second
+			background-image: url(../img/2.jpg)
+			background-position: center
+			background-repeat: no-repeat
+			-webkit-background-size: contain
+			background-size: contain
+			min-height: 388px
+	.heading_1
+		margin-top: 30px
+		font-size: 1.5em
+	.heading_2
+		font-size: 1.9em
+		font-weight: bold
+
+	.blockK
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+		// min-height: 300px
+		border-radius: 10px
+		font-size: 0.92em
+		line-height: 1.2em
+		text-align: justify
+		// border-bottom: 5px solid red
+		width: 255px
+		margin-bottom: 50px
+		p
+			margin: 14px
+			color: #8A8A8A
+		h6
+			text-align: center
+			font-weight: bold
+			margin: 14px
+		.order, .bold
+			font-weight: bold
+	.first
+		border-bottom: 5px solid #0F3FBB
+	.second
+		border-bottom: 5px solid #00FF0A
+	.third
+		border-bottom: 5px solid #FF7A00
+	.forth
+		border-bottom: 5px solid #DB00FF
+.ava
+	width: 30px!important
+	height: 30px
+	border: 2px solid #0F3FBB
+	border-radius: 15px
+	margin: 14px
+.background
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/bg.jpg)
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center	
+	.header
+		padding-top: 1px
+		h1
+			color: white
+		h2
+			color: white
+	form
+		margin-top: 40px
+		margin-bottom: 40px
+		input 
+			border-radius: 0!important
+		.btn
+			// height: 30px
+			width: 160px
+			background: $gold
+			color: white
+			border-radius: 0!important
+	.join_tg
+		color: white
+		font-size: 0.85em
+		display: flex
+		justify-content: center
+		padding-bottom: 25px
+		&:hover
+			text-decoration: none
+.reviews
+	margin-top: 55px
+	.owl-two
+		.blockK
+			border-bottom: none
+			font-size: 0.8em
+		.name
+			margin-top: 20px
+.why_we
+	.owl-three
+		margin-top: 10px
+		.blockK
+			border-bottom: none
+			min-width: 350px
+			margin-top: 15px
+			.order
+				color: black
+				// margin-top: 15px
+			p 
+				margin-bottom: 15px
+			.icon
+				width: 50px
+				height: 50px				
+				margin: 3px
+			.icon_bg
+				background-color: $gold
+				border-radius: 27px
+				margin: 7px
+.contacts
+	background-color: #F5F5F5
+	min-height: 425px
+	border: 1px solid rgba(130, 130, 130, 0.25)
+	input
+		box-shadow: 5px 3px 10px 3px #ccc;
+		border-radius: 0
+	input[type=text]
+		color: #393939
+	textarea
+		box-shadow: 5px 3px 10px 3px #ccc;
+		border-radius: 0
+		color: #393939
+	.btn-primary
+		border-radius: 17px!important
+		float: right
+		background-color: #0F3FBB
+		border: none
+		font-size: 0.93em
+		&:hover
+			background-color: darken( #0F3FBB, 5%)
+	.mrg 
+		margin-top: 45px
+	span
+		color: #0F3FBB
+	.bottom-border
+		bottom-border: 1px solid rgba(130, 130, 130, 0.25)
+		min-height: 348px
+		#map 
+			width: 380px
+			height: 190px
+			margin-top: 100px
+.order
+	padding-top: 13px
+
+@import "media" // Always at the end
