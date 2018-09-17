@@ -10,38 +10,56 @@
 +media-breakpoint-down(md)
 	.container
 		.navbar
-			.num
-				margin-left: 0
-				margin-right: 0	
+			.num				
 				font-size: 0.95em
+				// color: red
+
 // ≥768px
 +media-breakpoint-down(sm)
-	.heading_1
-		font-size: 1.2em
-	.heading_2
-		font-size: 1.5em
+	.container
+		.heading_1
+			font-size: 1.2em
+		.heading_2
+			font-size: 1.5em
+	.background
+		form
+			display: block
+		.form-group
+			padding-left: 0
+			margin-left: 0
 // ≥576px
 +media-breakpoint-down(xs)
-
-
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-+media-breakpoint-up(sm)
-.container
+	.container
 		.navbar
 			.num
 				margin-left: 0
 				margin-right: 0	
 				font-size: 0.95em
+		
+		.leading
+			.text
+				h1
+					font-size: 1.6em
+				.join_tg
+					font-size: 0.7em
+					margin-left: 5px
+		.button_link
+			font-size: 0.87em	
+	.contacts
+		.mrg 
+			margin-top: 5px
+		.bottom-border
+			#map
+				margin-top: 5px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
 // ≤768px
 +media-breakpoint-up(md)
-	.container
-			.navbar
-				.num
-					margin-left: 0
-					margin-right: 0
-					font-size: 0.95em
+	
 // ≤992px
 +media-breakpoint-up(lg)
 

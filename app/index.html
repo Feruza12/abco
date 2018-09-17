@@ -27,15 +27,15 @@
 </head>
 <body>
 	<div class="container">
-		<div class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg">
 			<a href="#" class="navbar-brand logo"><img class="img_logo image-fluid" src="img/logo.svg" alt="logo"/></a>
 			<p class="num">| +998 71 200 84 85</p>
 			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  		  <span><img src="img/align-justify.svg" alt=""></span>
+  		  <span><img src="img/align-justify.svg" alt="icon"></span>
  			 </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>		
+					<li class="nav-item"><a href="#" class="nav-link active">Главная<span class="sr-only">(current)</span></a></li>		
 					<li class="nav-item"><a class="nav-link" href="#about_us">О нас</a></li>
 					<li class="nav-item"><a class="nav-link" href="#problems">Проблемы/Решения</a></li>
 					<li class="nav-item"><a class="nav-link" href="#why_we">Почему мы?</a></li>
@@ -44,7 +44,7 @@
 					<li class="nav-item"><a class="nav-link button_link" role="button" href="#leave_message">Оставить заявку</a></li>
 				</ul>
 			</div>
-    </div>
+    </nav>
     <div class="row justify-content-between leading">
     	<div class="col-xl-5 col-lg-6 col-md-12 col-12">
 	    	<div class="text">
@@ -111,7 +111,7 @@
   			<h1 class=" heading_1">Подпишитесь</h1>
     		<h2 class="heading_2">НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</h2>
     	</div>    
-    		<form action="" class="form-group d-flex">
+    		<form action="" class="form-group">
 					<div class="form-group col">
 						<input class="form-control" type="text" placeholder="Ф.И.О">
 					</div>
@@ -126,23 +126,23 @@
 			<a class="join_tg" role="button" href="">Присоединиться в телеграм канал <img src="img/tg_blue.svg" class="ml-2" alt=""></a> 
   	</div>
   </div>
-  <div class="container reviews" id="#reviews">
+  <div class="container reviews" id="reviews">
   	<img src="img/quote.svg" alt="">
   	<h1 class=" heading_1">Что говорят о нас</h1>
     <h2 class="heading_2">ОТЗЫВЫ ВЫПУСКНИКОВ</h2>
     <div class="owl-carousel owl-two">
     	<div class="blockK">
     		<p><br> Очень качественный учебный центр для тех кто реально хочет изучить что то новое. Рекомендую всем. Есть старание есть успех...)))</p>
-    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.jpg" alt="ava"><span class="name">Nodirxon</span></div></div>
+    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.png" alt="ava"><span class="name">Nodirxon</span></div></div>
     	<div class="blockK">
     		<p><br>Очень качественный учебный центр для тех кто реально хочет изучить что то новое. Рекомендую всем. Есть старание есть успех...)))</p>
-    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.jpg" alt="ava"><span class="name">Nodirxon</span></div></div>
+    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.png" alt="ava"><span class="name">Nodirxon</span></div></div>
     	<div class="blockK">
     		<p><br>Очень качественный учебный центр для тех кто реально хочет изучить что то новое. Рекомендую всем. Есть старание есть успех...)))</p>
-    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.jpg" alt="ava"><span class="name">Nodirxon</span></div></div>
+    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.png" alt="ava"><span class="name">Nodirxon</span></div></div>
     	<div class="blockK">
     		<p><br>Очень качественный учебный центр для тех кто реально хочет изучить что то новое. Рекомендую всем. Есть старание есть успех...)))</p>
-    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.jpg" alt="ava"><span class="name">Nodirxon</span></div></div>
+    		<div class="d-flex"><img class="ava image-fluid" src="img/ava.png" alt="ava"><span class="name">Nodirxon</span></div></div>
     </div>
   </div>
   <div class="container why_we" id="why_we">
@@ -191,7 +191,14 @@
   				<p class="mrg"><span>Адрес</span> <br>г.Ташкент, ул. Самарканд Дарвоза 9-дом</p>
   				<p><span>Номер телефона</span> <br>+998 71 200 84 85</p>
   				<p><span>Эл. почта</span> <br>info@abco.uz</p>
-  				<p><span>Социальные сети:</span><br> </p>
+  				<div class="d-flex"> <p> <span>Социальные сети:</span>
+							<ul class="list-inline ml-2">
+								<li class="list-inline-item"><a href=""><img src="img/fb.svg" alt=""></a></li>
+								<li class="list-inline-item"><a href=""><img src="img/instagram.svg" alt=""></a></li>
+								<li class="list-inline-item ml-0"><a href=""><img src="img/tg_grey.svg" alt=""></i></a></li>										
+							</ul>			
+						 </p>
+						</div>
   			</div>
   			<div class="col-xl-5 col-lg-5 col-md-5 col-12">
   				<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.544540690993!2d69.33453!3d41.338525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3772abeffc72e7b8!2sInha+University+in+Tashkent!5e0!3m2!1sen!2s!4v1537000219078" frameborder="0" style="border:0" allowfullscreen></iframe></div>
