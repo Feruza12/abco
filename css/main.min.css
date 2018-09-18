@@ -12577,6 +12577,7 @@ strong {
   -webkit-background-size: contain;
   background-size: contain;
   min-height: 395px;
+  margin-top: 35px;
 }
 
 .container .leading .text {
@@ -12871,6 +12872,14 @@ strong {
   .container .heading_2 {
     font-size: 1.5em;
   }
+  .container .leading .text {
+    margin-top: 20px;
+  }
+  .container .leading .text .join_tg {
+    margin-left: 0px;
+    display: block;
+    margin-top: 15px;
+  }
   .background form {
     display: block;
   }
@@ -12887,11 +12896,10 @@ strong {
     font-size: 0.95em;
   }
   .container .leading .text h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
-  .container .leading .text .join_tg {
-    font-size: 0.7em;
-    margin-left: 5px;
+  .container .leading .laptop_bg {
+    margin-top: 0px;
   }
   .container .button_link {
     font-size: 0.87em;
