@@ -12873,6 +12873,10 @@ strong {
   .container .navbar .navbar-nav .button_link {
     margin-left: 0;
   }
+  .container .navbar .navbar-nav::after {
+    width: 0;
+    height: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
