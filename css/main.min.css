@@ -12557,6 +12557,7 @@ strong {
   padding: 5px 15px;
   -webkit-border-radius: 15px;
           border-radius: 15px;
+  display: inline-block;
 }
 
 .container .button_link:hover {
@@ -12858,10 +12859,19 @@ strong {
   padding-top: 13px;
 }
 
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 991.98px) {
   .container .navbar .num {
     font-size: 0.95em;
+  }
+  .container .navbar .navbar-nav .button_link {
+    margin-left: 0;
   }
 }
 
