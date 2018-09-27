@@ -75,17 +75,29 @@ $(document).ready(function(){
       event.preventDefault();
       var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){       
-        window.location.hash = hash;
-      });
+      // $('html, body').animate({
+      //   scrollTop: $(hash).offset().top
+      // }, 800, function(){       
+      //   window.location.hash = hash;
+      // });
     } 
   });
 
   $.mask.definitions['9']='';
   $.mask.definitions['d']='[0-9]';
   $("#phone").mask("+998 (dd) ddd-dd-dd");
+
+  lightbox.option({
+        'resizeDuration': 400,
+        'fadeDuration': 400,
+        'alwaysShowNavOnTouchDevices': true
+    });
 });
+
+function linking(get){
+    // alert('hi');
+    window.location.href = "service.html#service";
+}
+
 
  

@@ -28,19 +28,25 @@ body
 b, strong
 	font-weight: bold
 
-.navbar 
-	margin-top: 20px
+.logo 
+	.img_logo
+		width: 73px
+		height: 21px	
+		// width: 100%
+		// height: 100%
 
-.img_logo
-	width: 30px
-	height: 39px
-
+.container-fluid 
+	.laptop_bg
+		background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/bg_landing.jpg)
+		-webkit-background-size: cover
+		background-size: cover
+		background-position: center	
 .container
 	.navbar
 		.num
 			margin-top: 20px
-			font-size: 1em	
-			color: #868686		
+			font-size: 1.2em	
+			color: #393939		
 		.navbar-nav
 			font-size: 0.9em
 			a
@@ -64,54 +70,49 @@ b, strong
 					color: white	
 				
 	.button_link
-				background-color: $gold
+		background-color: $gold
+		color: white
+		padding: 5px 15px
+		border-radius: 15px
+		display: inline-block
+		&:hover
+			color: white	
+			background-color: darken($gold, 3%)
+			text-decoration: none
+	.row
+		.content_box
+			margin-top: 70px
+			margin-bottom: 80px
+			background-color: white
+			min-height: 210px
+			padding: 20px
+			border-radius: 10px
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+			h3
+				color: $blue
+				font-size: 1em
+				font-weight: bold
+				margin-top: 7px
+			p 
+				margin-top: 10px
+				// margin-bottom: 20px
+				color: #393939
+				font-size: 0.9em
+				line-height: 1.2em
+			.button_reg
+				float: right
+				font-size: 0.93em
 				color: white
-				padding: 5px 15px
-				border-radius: 15px
-				display: inline-block
-				&:hover
-					color: white	
-					background-color: darken($gold, 3%)
+				padding: 3px 29px
+				margin-bottom: 20px	
+				background-color: $blue 
+				&:hover	
 					text-decoration: none
-	.leading
-		min-height: 388px
-		margin-top: 15px
-		.laptop_bg
-			background-image: url(../img/1.jpg)
-			background-position: center
-			background-repeat: no-repeat
-			-webkit-background-size: contain
-			background-size: contain
-			min-height: 395px
-			margin-top: 35px
-		.text
-			margin-top: 100px
-			color: 	#393939
-			line-height: 1.2em
-			h1
-				font-size: 1.8em
-				font-family: $second-font
-			p
-				margin-top: 20px
-				font-size: 0.95em
-				margin-right: 0
-				line-height: 1.1
-				color: #393939
-				text-indent: 40px
-			.join_tg
-				font-size: 0.85em
-				line-height: 1
-				color: #393939
-				margin-left: 15px
-				&:hover
-					text-decoration: none
-					color
+					background-color: darken($blue, 5%)
 	.content
 		color: 	#393939
 		line-height: 1.2em
 		font-size: 0.95em
-
-
 	.about_us
 		.laptop_bg_second
 			background-image: url(../img/2.jpg)
@@ -126,15 +127,13 @@ b, strong
 	.heading_2
 		font-size: 1.9em
 		font-weight: bold
-
+		color: $blue
 	.blockK
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
 		border-radius: 10px
 		font-size: 0.92em
 		line-height: 1.2em
 		text-align: justify
-		// border-bottom: 5px solid red
-		// width: 255px
 		margin-bottom: 50px
 		p
 			margin: 14px
@@ -146,7 +145,7 @@ b, strong
 		.order, .bold
 			font-weight: bold
 	.first
-		border-bottom: 5px solid #0F3FBB
+		border-bottom: 5px solid $blue
 	.second
 		border-bottom: 5px solid #00FF0A
 	.third
@@ -156,7 +155,7 @@ b, strong
 .ava
 	width: 30px!important
 	height: 30px
-	border: 2px solid #0F3FBB
+	border: 2px solid $blue
 	border-radius: 15px
 	margin: 14px
 .background
@@ -203,7 +202,6 @@ b, strong
 		margin-top: 10px
 		.blockK
 			border-bottom: none
-			// min-width: 350px
 			margin-top: 15px
 			.order
 				color: black
@@ -234,26 +232,27 @@ b, strong
 	.btn-primary
 		border-radius: 17px!important
 		float: right
-		background-color: #0F3FBB
+		background-color: $blue
 		border: none
 		font-size: 0.93em
 		&:hover
-			background-color: darken( #0F3FBB, 5%)
+			background-color: darken( $blue, 5%)
 	.mrg 
 		margin-top: 45px
 	span
-		color: #0F3FBB
+		color: $blue
 	.bottom-border
 		bottom-border: 1px solid rgba(130, 130, 130, 0.25)
 		min-height: 348px
 		#map 
-			// width: 100%
 			background: #ccc
 			height: 190px
 			margin-top: 100px
 			iframe
 				width: 100%
 				height: 100%
+		.send_us
+			color: black
 .order
 	padding-top: 13px
 
@@ -261,5 +260,43 @@ b, strong
 	width: 30px
 	height: 2px
 	background-color: black
+.gallery
+	margin-bottom: 60px
+	.images
+		margin: 10px
+		width: 100%
+		a
+			img
+				width: 100%
+.footer
+	border-top:  1px solid rgba(130, 130, 130, 0.25)
+	margin-top: 20px
+	h5
+		margin-top: 30px
+		font-weight: bold
+		margin-bottom: 30px
+.content_box_second
+	.block
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+		border-radius: 7px
+		font-size: 0.92em
+		line-height: 1.2em
+		text-align: justify
+		margin-bottom: 50px
+		p
+			margin: 14px
+			color: #8A8A8A
+		.order
+				color: black
+				font-weight: bold
+		.icon
+			width: 50px
+			height: 50px				
+			margin: 3px
+		.icon_bg
+			background-color: $gold
+			border-radius: 27px
+			margin: 7px
+
 
 @import "media" // Always at the end
