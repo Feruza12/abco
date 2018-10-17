@@ -12759,6 +12759,11 @@ strong {
 .reviews .owl-two .blockK {
   border-bottom: none;
   font-size: 0.8em;
+  height: 200px;
+}
+
+.reviews .owl-two .blockK p {
+  height: 130px;
 }
 
 .reviews .owl-two .name {
@@ -12904,6 +12909,8 @@ strong {
   line-height: 1.2em;
   text-align: justify;
   margin-bottom: 50px;
+  height: 300px;
+  overflow-y: hidden;
 }
 
 .content_box_second .block p {
@@ -12914,12 +12921,13 @@ strong {
 .content_box_second .block .order {
   color: black;
   font-weight: bold;
+  margin: 9px 3px;
 }
 
 .content_box_second .block .icon {
   width: 50px;
   height: 50px;
-  margin: 3px;
+  margin: 2px;
 }
 
 .content_box_second .block .icon_bg {
@@ -12927,6 +12935,8 @@ strong {
   -webkit-border-radius: 27px;
           border-radius: 27px;
   margin: 7px;
+  width: 55px;
+  height: 55px;
 }
 
 /*==========  Desktop First  ==========*/
